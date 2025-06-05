@@ -1,0 +1,15 @@
+meta {
+  name: CambiarEstadoEvento
+  type: http
+  seq: 6
+}
+
+put {
+  url: http://localhost:8080/evento/1/estado?nuevoEstado=1
+  body: none
+  auth: inherit
+}
+
+params:query {
+  nuevoEstado: 1
+}

@@ -6,6 +6,28 @@ meta {
 
 post {
   url: http://localhost:8080/mascota
-  body: none
+  body: json
   auth: inherit
+}
+
+body:json {
+  {
+    "mascota": {
+      "masc_nombre": "Nono",
+      "masc_fecha_nacimiento": "2016-09-10",
+      "sexo": { "sex_id": 1 },
+      "tamanio": { "tam_id": 2 },
+      "nivel_energia": { "nien_id": 3 },
+      "tipo_mascota": { "tipma_id": 1 },
+      "estado_salud": { "estsa_id": 2 },
+      "estado_vacuna": { "estva_id": 1 },
+      "masc_historia": "Perro rescatado de la calle, muy amigable y juguetón",
+      "masc_observacion": "Le gusta estar con la familia"
+    },
+    "gustosIds": [4, 6, 1],
+    "imagenUrls": [
+      "https://example.com/oscar1.jpg",
+      "https://example.com/oscar2.jpg"
+    ]
+  }
 }
