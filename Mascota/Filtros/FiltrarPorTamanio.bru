@@ -1,0 +1,15 @@
+meta {
+  name: FiltrarPorTamanio
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8080/mascota/filter?tamId=2
+  body: none
+  auth: inherit
+}
+
+params:query {
+  tamId: 2
+}

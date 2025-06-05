@@ -1,0 +1,15 @@
+meta {
+  name: FiltrarPorTipoMascota
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:8080/mascota/filter?tipmaId=2
+  body: none
+  auth: inherit
+}
+
+params:query {
+  tipmaId: 2
+}
