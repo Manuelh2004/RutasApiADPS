@@ -5,15 +5,19 @@ meta {
 }
 
 post {
-  url: http://localhost:8080/mascota
+  url: http://localhost:8080/api/mascota/registrar_mascota
   body: json
-  auth: inherit
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwcnVlYmFAZ21haWwuY29tLmNvbSIsImlhdCI6MTc0OTQ4NDU1MSwiZXhwIjoxNzQ5NTcwOTUxfQ.Vh1vP81sRAbvqj5y5VSPvsOFWNNCgXhfacwTZNTB6Lo
 }
 
 body:json {
   {
     "mascota": {
-      "masc_nombre": "Nono",
+      "masc_nombre": "Nonito",
       "masc_fecha_nacimiento": "2016-09-10",
       "sexo": { "sex_id": 1 },
       "tamanio": { "tam_id": 2 },

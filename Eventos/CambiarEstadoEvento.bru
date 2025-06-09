@@ -5,11 +5,15 @@ meta {
 }
 
 put {
-  url: http://localhost:8080/evento/1/estado?nuevoEstado=1
+  url: http://localhost:8080/api/evento/1/estado?nuevoEstado=0
   body: none
-  auth: inherit
+  auth: bearer
 }
 
 params:query {
-  nuevoEstado: 1
+  nuevoEstado: 0
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwcnVlYmFAZ21haWwuY29tLmNvbSIsImlhdCI6MTc0OTQ4MzE5MCwiZXhwIjoxNzQ5NTY5NTkwfQ.whoql5UsBJ10-ggJBbNIVuBo2ITapvKbZNhPbOyoTl0
 }

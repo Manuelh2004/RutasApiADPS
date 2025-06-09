@@ -1,0 +1,45 @@
+meta {
+  name: ActualizarMascota
+  type: http
+  seq: 6
+}
+
+put {
+  url: http://localhost:8080/api/mascota/81
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwcnVlYmFAZ21haWwuY29tLmNvbSIsImlhdCI6MTc0OTQ4NDU1MSwiZXhwIjoxNzQ5NTcwOTUxfQ.Vh1vP81sRAbvqj5y5VSPvsOFWNNCgXhfacwTZNTB6Lo
+}
+
+body:json {
+  {
+    "masc_nombre": "Maximulñ",
+    "masc_fecha_nacimiento": "2020-03-15",
+    "masc_historia": "Maximus es un perro rescatado que adora correr en el parque.",
+    "masc_observacion": "Le gustan mucho los paseos largos y la compañía de otros perros.",
+    "masc_estado": 1,
+    "sexo": {
+      "sex_id": 2
+    },
+    "tamanio": {
+      "tam_id": 2
+    },
+    "nivel_energia": {
+      "nien_id": 4
+    },
+    "tipo_mascota": {
+      "tipma_id": 1
+    },
+    "estado_salud": {
+      "estsa_id": 2
+    },
+    "estado_vacuna": {
+      "estva_id": 1
+    }
+  }
+  
+  
+}

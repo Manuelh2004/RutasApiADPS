@@ -5,7 +5,11 @@ meta {
 }
 
 get {
-  url: http://localhost:8080/mascota
+  url: http://localhost:8080/api/mascota/listar_mascota
   body: none
-  auth: inherit
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGV4eGFuZGVyYXlAZ21haWwuY29tIiwiaWF0IjoxNzQ5NDg4MDUxLCJleHAiOjE3NDk1NzQ0NTF9.0uXe6vmFpMC3hBxZp-WxTDN99ZOQiT3k245zwBkh9v4
 }

@@ -5,7 +5,23 @@ meta {
 }
 
 put {
-  url: http://localhost:8080/evento/1
-  body: none
-  auth: inherit
+  url: http://localhost:8080/api/evento/3
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwcnVlYmFAZ21haWwuY29tLmNvbSIsImlhdCI6MTc0OTQ4MzE5MCwiZXhwIjoxNzQ5NTY5NTkwfQ.whoql5UsBJ10-ggJBbNIVuBo2ITapvKbZNhPbOyoTl0
+}
+
+body:json {
+  {
+      "even_nombre": "Concierto de Tunaaa",
+      "even_descripcion": "Evento internacional",
+      "even_fecha_inicio": "2025-09-11",
+      "even_fecha_fin": "2025-12-11",
+      "even_lugar": "Estadio Alberto Gallardo",
+      "even_imagen": "http://example.com/tomo.jpg"
+  }
+  
 }

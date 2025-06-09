@@ -5,7 +5,11 @@ meta {
 }
 
 get {
-  url: http://localhost:8080/evento
+  url: http://localhost:8080/api/evento/listar
   body: none
-  auth: inherit
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwcnVlYmFAZ21haWwuY29tLmNvbSIsImlhdCI6MTc0OTQ4MzE5MCwiZXhwIjoxNzQ5NTY5NTkwfQ.whoql5UsBJ10-ggJBbNIVuBo2ITapvKbZNhPbOyoTl0
 }

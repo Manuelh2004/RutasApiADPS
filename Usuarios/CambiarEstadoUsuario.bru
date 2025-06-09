@@ -1,0 +1,11 @@
+meta {
+  name: CambiarEstadoUsuario
+  type: http
+  seq: 1
+}
+
+put {
+  url: http://localhost:8080/usuario/1/cambiar_estado
+  body: none
+  auth: inherit
+}

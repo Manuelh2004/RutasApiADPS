@@ -1,0 +1,31 @@
+meta {
+  name: CrearCuentaUsuario
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/usuario/crear_cuenta
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "usr_nombre": "Juan",
+    "usr_apellido": "Pérez",
+    "usr_documento": "12345678",
+    "usr_direccion": "Av. Principal 123",
+    "usr_telefono": "987654321",
+    "usr_fecha_nacimiento": "1990-05-10",
+    "usr_email": "prueba@gmail.com.com",
+    "usr_password": "contra123",
+    "tipoUsuario": {
+      "tipus_id": 2
+    },
+    "tipoDocumento": {
+      "tipdoc_id": 1
+    }
+  }
+  
+}
