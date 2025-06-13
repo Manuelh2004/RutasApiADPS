@@ -1,0 +1,32 @@
+meta {
+  name: ActualizarUsuario
+  type: http
+  seq: 6
+}
+
+put {
+  url: http://localhost:8080/user/api/usuario/1
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwcnVlYmFAZ21haWwuY29tLmNvbSIsInJvbGUiOiJST0xFX1VTRVIiLCJpYXQiOjE3NDk2NTU4MDYsImV4cCI6MTc0OTc0MjIwNn0.M5UP7LCpZ2Kp1G-eNIHLfkD0ZRlOA_xTxy6scGFYwxw
+}
+
+body:json {
+  {
+      "usr_nombre": "Juan",
+      "usr_apellido": "Pérez",
+      "usr_documento": "123456789",
+      "usr_direccion": "Calle Falsa 123",
+      "usr_telefono": "1234567890",
+      "usr_fecha_nacimiento": "1990-01-01",
+      "usr_password": "nuevacontraseña",
+      "admin": false,
+      "tipoDocumento": {
+          "tipdoc_id": 1
+      }
+  }
+  
+}

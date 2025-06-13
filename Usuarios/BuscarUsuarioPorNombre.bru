@@ -1,13 +1,17 @@
 meta {
-  name: ListarTamanios
+  name: BuscarUsuarioPorNombre
   type: http
-  seq: 5
+  seq: 7
 }
 
 get {
-  url: http://localhost:8080/admin/api/item/tamanios
+  url: http://localhost:8080/admin/api/usuario/buscar?nombre=Perez
   body: none
   auth: bearer
+}
+
+params:query {
+  nombre: Perez
 }
 
 auth:bearer {

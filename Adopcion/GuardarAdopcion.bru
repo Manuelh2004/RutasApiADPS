@@ -1,0 +1,21 @@
+meta {
+  name: GuardarAdopcion
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/api/adopcion/guardar/2
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtZW5hQGdtYWlsLmNvbSIsInJvbGUiOiJST0xFX1VTRVIiLCJpYXQiOjE3NDk3NjE3MTYsImV4cCI6MTc0OTg0ODExNn0.UQkNVhM6kgpPsE_iaecSmdNjs9n7MAXb5QKk2BJJ-kI
+}
+
+body:json {
+  {
+    "adop_motivo": "Quiero dar un hogar a esta mascota"
+  }
+}

@@ -1,0 +1,15 @@
+meta {
+  name: ListarEventoUsuario
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8080/api/evento/mis_eventos
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqdWFuLnBlcmV6a0BlbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9BRE1JTiIsImlhdCI6MTc0OTc2MzQ4NywiZXhwIjoxNzQ5ODQ5ODg3fQ.bEMYVfcagaeRmC1Ki-mwrLk2GAT_86QHJY5QwDPgWIw
+}

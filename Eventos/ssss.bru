@@ -1,0 +1,21 @@
+meta {
+  name: ssss
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost/proyecto_moviles/controladores/usuarioController/obtener_rol.php
+  body: multipartForm
+  auth: inherit
+}
+
+body:json {
+  {
+    "id_usuario": 1
+  }
+}
+
+body:multipart-form {
+  uid_firebase: h3nNYksDwwcdX9l2amZFvZz6y0x1
+}

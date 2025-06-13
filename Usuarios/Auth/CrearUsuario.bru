@@ -1,24 +1,24 @@
 meta {
-  name: Crear
+  name: CrearUsuario
   type: http
-  seq: 7
+  seq: 6
 }
 
 post {
-  url: http://localhost:8080/auth/register
+  url: http://localhost:8080/auth/crear_usuario
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "usr_nombre": "Juan",
-    "usr_apellido": "Pérez",
+    "usr_nombre": "Manuel",
+    "usr_apellido": "Hilario",
     "usr_documento": "12345678",
     "usr_direccion": "Av. Principal 123",
     "usr_telefono": "987654321",
     "usr_fecha_nacimiento": "1990-05-10",
-    "usr_email": "alexxanderay@gmail.com",
+    "usr_email": "abraham2004hf@gmail.com",
     "usr_password": "contra123",
     "tipoDocumento": {
       "tipdoc_id": 1

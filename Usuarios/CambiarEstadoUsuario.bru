@@ -5,7 +5,15 @@ meta {
 }
 
 put {
-  url: http://localhost:8080/usuario/1/cambiar_estado
+  url: http://localhost:8080/admin/api/usuario/10/estado?nuevoEstado=Desactivado
   body: none
-  auth: inherit
+  auth: bearer
+}
+
+params:query {
+  nuevoEstado: Desactivado
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGV4eGFuZGVyYXlAZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJpYXQiOjE3NDk2NTI2NDcsImV4cCI6MTc0OTczOTA0N30.YHJ_qu-jYLlwQL9Q3H7w8ZjsnCWqLk4iNyWPf7tgZ78
 }

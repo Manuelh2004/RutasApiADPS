@@ -1,13 +1,17 @@
 meta {
-  name: ListarEventos
+  name: CambiarEstadoMascota
   type: http
-  seq: 2
+  seq: 7
 }
 
-get {
-  url: http://localhost:8080/admin/api/evento/listar_evento
+put {
+  url: http://localhost:8080/admin/api/mascota/1/estado?nuevoEstado=1
   body: none
   auth: bearer
+}
+
+params:query {
+  nuevoEstado: 1
 }
 
 auth:bearer {

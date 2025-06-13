@@ -5,9 +5,13 @@ meta {
 }
 
 post {
-  url: http://localhost:8080/usuario/registrar_administrador
+  url: http://localhost:8080/admin/api/usuario/registrar_usuario
   body: json
-  auth: inherit
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGV4eGFuZGVyYXlAZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJpYXQiOjE3NDk2NTI2NDcsImV4cCI6MTc0OTczOTA0N30.YHJ_qu-jYLlwQL9Q3H7w8ZjsnCWqLk4iNyWPf7tgZ78
 }
 
 body:json {
@@ -18,8 +22,8 @@ body:json {
     "usr_direccion": "Av. Principal 123",
     "usr_telefono": "987654321",
     "usr_fecha_nacimiento": "1990-05-10",
-    "usr_email": "juan.perez@email.com",
-    "usr_password": "contraseñaSegura123",
+    "usr_email": "juan.perezk@email.com",
+    "usr_password": "contrase123",
     "tipoDocumento": {
       "tipdoc_id": 1
     }

@@ -1,0 +1,15 @@
+meta {
+  name: GuardarEventoUsuario
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/api/evento/guardar/2
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtZW5hQGdtYWlsLmNvbSIsInJvbGUiOiJST0xFX1VTRVIiLCJpYXQiOjE3NDk3NTk0NjMsImV4cCI6MTc0OTg0NTg2M30.hdbr5Oj5SpI-AR6A00jEOuaf6Bjg9M8gqH-DHw59A80
+}

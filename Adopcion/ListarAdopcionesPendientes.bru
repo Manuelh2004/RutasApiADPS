@@ -1,0 +1,15 @@
+meta {
+  name: ListarAdopcionesPendientes
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:8080/admin/api/adopciones/pendientes
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqdWFuLnBlcmV6a0BlbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9BRE1JTiIsImlhdCI6MTc0OTc5NDc0NCwiZXhwIjoxNzQ5ODgxMTQ0fQ.HPAcAUVt22DUpbwEu8qnt3XiG6v-7iLOM0g3jlJPhkg
+}
