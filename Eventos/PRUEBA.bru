@@ -1,0 +1,19 @@
+meta {
+  name: PRUEBA
+  type: http
+  seq: 8
+}
+
+post {
+  url: http://localhost/proyecto_moviles/controladores/presupuestoController/presupuesto_registrar.php
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  id_usuario: 4
+  categoriaP: 1
+  montoP: 400
+  fechaInicioP: 2025-06-15
+  fechaFinP: 2025-12-15
+}

@@ -5,8 +5,8 @@ meta {
 }
 
 post {
-  url: http://localhost/proyecto_moviles/controladores/usuarioController/obtener_rol.php
-  body: multipartForm
+  url: http://localhost/proyecto_moviles/controladores/usuarioController/crear_usuario.php
+  body: formUrlEncoded
   auth: inherit
 }
 
@@ -16,6 +16,26 @@ body:json {
   }
 }
 
+body:form-urlencoded {
+  nombres: Juan
+  apellidos: Pérez
+  telefono: 1234567890
+  documento: 987654321
+  fechaNa: 1990-01-01
+  idGenero: 1
+  idTipoDoc: 1
+  email: prsaueba@gssssggsml.com
+  uid_firebase: firebase_uid_12345
+}
+
 body:multipart-form {
-  uid_firebase: h3nNYksDwwcdX9l2amZFvZz6y0x1
+  nombres: Juan
+  apellidos: Pérez
+  telefono: 123456789
+  documento: 12345678
+  fechaNa: 1990-01-01
+  idGenero: 1
+  idTipoDoc: 1
+  email: ju.perez@example.com
+  uid_firebase: abcdefghijklmnopqrstuvwxyz1234
 }
