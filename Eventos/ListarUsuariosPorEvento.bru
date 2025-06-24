@@ -1,0 +1,15 @@
+meta {
+  name: ListarUsuariosPorEvento
+  type: http
+  seq: 9
+}
+
+get {
+  url: http://localhost:8080/admin/api/evento/5/usuarios
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqdWFuLnBlcmV6a0BlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW5pc3RyYWRvciIsImlhdCI6MTc1MDM1NTQzNywiZXhwIjoxNzUwNDQxODM3fQ._ZL2-V-isaZMcwe2QM5v0NTBD82RMZ4wCyHpDcxN8KA
+}

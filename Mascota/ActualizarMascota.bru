@@ -5,41 +5,37 @@ meta {
 }
 
 put {
-  url: http://localhost:8080/admin/api/mascota/81
+  url: http://localhost:8080/admin/api/mascota/19
   body: json
   auth: bearer
 }
 
 auth:bearer {
-  token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGV4eGFuZGVyYXlAZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJpYXQiOjE3NDk2MjAwNTgsImV4cCI6MTc0OTcwNjQ1OH0.iUrj-GD9G3sZtuhkPFUrqxYFXE2bsNjc7Vth25zwnW4
+  token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqdWFuLnBlcmV6a0BlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW5pc3RyYWRvciIsImlhdCI6MTc1MDQ1NDA2MywiZXhwIjoxNzUwNTQwNDYzfQ.ByR0fT3qrkqeJZu8obGpf1HCIr_WuWDp9SxDKiroGIQ
 }
 
 body:json {
   {
-    "masc_nombre": "Maximulñ",
-    "masc_fecha_nacimiento": "2020-03-15",
-    "masc_historia": "Maximus es un perro rescatado que adora correr en el parque.",
-    "masc_observacion": "Le gustan mucho los paseos largos y la compañía de otros perros.",
-    "masc_estado": 1,
-    "sexo": {
-      "sex_id": 2
+    "mascota": {
+      "masc_nombre": "Rex",
+      "masc_fecha_nacimiento": "2019-05-15",
+      "masc_fecha_registro": "2023-06-20",
+      "masc_historia": "Rex fue encontrado en la calle y adoptado por una familia cariñosa.",
+      "masc_observacion": "Le encanta correr en los parques.",
+      "masc_estado": 1,
+      "sexo": {"sex_id": 2},
+      "tamanio": {"tam_id": 2},
+      "nivel_energia": {"nien_id": 3},
+      "tipo_mascota": {"tipma_id": 1},
+      "estado_salud": {"estsa_id": 2},
+      "estado_vacuna": {"estva_id": 1}
     },
-    "tamanio": {
-      "tam_id": 2
-    },
-    "nivel_energia": {
-      "nien_id": 4
-    },
-    "tipo_mascota": {
-      "tipma_id": 1
-    },
-    "estado_salud": {
-      "estsa_id": 2
-    },
-    "estado_vacuna": {
-      "estva_id": 1
-    }
+    "imagenUrls": [
+      "http://example.com/image22.jpg",
+      "http://example.com/image23.jpg",
+      "http://example.com/image23.jpg"
+    ],
+    "newGustos": [3, 5]
   }
-  
   
 }
